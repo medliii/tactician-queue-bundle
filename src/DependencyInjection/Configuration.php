@@ -19,8 +19,8 @@ class Configuration implements ConfigurationInterface
      */
     public function getConfigTreeBuilder()
     {
-        $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('lamoda_tactician_queue');
+        $treeBuilder = new TreeBuilder('lamoda_tactician_queue');
+        $rootNode = $treeBuilder->getRootNode();
 
         $rootNode
             ->children()
